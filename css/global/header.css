@@ -1,0 +1,49 @@
+/* Background do menu de navegação header */
+.header-bg {
+    background-color: #000000;
+}
+
+/* O header principal do site inicial */
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+/* navegação do header */
+.header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.header-menu a {
+    color: #ffffff;
+    display: inline-block;
+    padding: 16px 0px;
+    font-size: 18px;
+    position: relative;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.header-menu a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0px;
+    background-color: #ffffff;
+    margin-top: 4px;
+    transition: 0.5s;
+    position: absolute;
+}
+
+.header-menu a:hover::after {
+    width: 100%;
+}
